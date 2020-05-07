@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
@@ -32,7 +32,97 @@
       </a>
       <h1 class="main-logo">SEDONA</h1>
     </header>
-  </body>
+    <main>
+      <form
+        method="post"
+        action="https://echo.htmlacademy.ru"
+        class="feedback-form"
+      >
+        <div class="feedback-form__intro">
+          <h2 class="intro-item__header">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+          <p class="intro-item">
+            Помогите нашим отелям стать лучше!<br />
+            Оставьте свой отзыв о них, а также о посещенных вами
+            достопримечательнастях
+          </p>
+        </div>
+        <div class="feedback-form__self-intro">
+          <h2 class="self-intro__header">ПРЕДСТАВЬТЕСЬ:</h2>
+          <label
+          >ИМЯ<sup>*</sup>:<input type="text" name="name" required
+          /></label>
+          <label
+          >ФАМИЛИЯ<sup>*</sup>:<input type="text" name="surname" required
+          /></label>
+          <label>ОТЧЕСТВО:<input type="text" name="middle-name"/></label>
+        </div>
+        <div class="feedback-form__contact-info">
+          <h2 class="contact-info__header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
+          <label for="tel">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
+          <span class="tel-input"
+          ><input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{11}"
+            placeholder="Введите телефон"
+            required/><img src="https://via.placeholder.com/150x150"
+          /></span>
+          <label for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
+          <span class="email-input"
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите e-mail"
+            required/><img src="https://via.placeholder.com/150x150"
+          /></span>
+        </div>
+        <div class="feedback-form__impression">
+          <h2 class="impression__header">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+          <label>
+            <input type="radio" name="impression" value="good" checked />Скорее
+            положительное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="bad" />Скорее
+            отрицательное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="not-sure" />Затрудняюсь
+            ответить
+          </label>
+        </div>
+        <div class="feedback-form__attractions">
+          <h2 class="attractions__header">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+          <input
+            type="checkbox"
+            name="devil-bridge"
+            id="attraction-1"
+            checked
+          />
+          <label for="attraction-1">Мост Дьявола</label>
+          <input type="checkbox" name="bell-rock" id="attraction-2" checked />
+          <label for="attraction-2">Гора-Колокол</label>
+          <input type="checkbox" name="slide-park" id="attraction-3" checked />
+          <label for="attraction-3">Слайд-парк</label>
+          <input type="checkbox" name="red-rock" id="attraction-4" />
+          <label for="attraction-4">Красные скалы</label>
+        </div>
+        <div class="feedback-form__emotions">
+          <h2 class="emotions__header">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
+          <textarea
+            name="feedback-field"
+            id="feedback-field"
+            rows="5"
+            cols="30"
+          >
+Опишите все свои восторги</textarea
+          >
+          <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+        </div>
+      </form>
+    </main>
   <footer class="page-footer">
     <h2 class="footer__title">#VISITSEDONA</h2>
     <div class="page-footer__social social">
@@ -73,4 +163,5 @@
       </a>
     </div>
   </footer>
+  </body>>
 </html>
