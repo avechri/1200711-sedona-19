@@ -1,5 +1,5 @@
 @light-blue: RGB(129, 179, 210);
-@main-font: 16px "PT Sans", sans-serif;
+@main-font: 14px "PT Sans", sans-serif;
 
 
 .reasons-bg (@bg-color) {
@@ -10,12 +10,15 @@
   color: @font-color;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .reasons__items (@font-color) {
   font: @main-font;
   color: @font-color;
   text-transform: uppercase;
+  line-height: 21px;
+  text-align: center;
 }
 
 //примеси закончились
@@ -25,9 +28,22 @@
   background-repeat: no-repeat;
 }
 
+.main-logo {
+  background-image: url('../img/bg-back-mobile1x.jpg');
+  background-repeat: no-repeat;
+}
+
 .main-header__intro {
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
+}
+
+.main-header {
+  .reasons__headers(black)
+}
+
+.main-header__intro {
+  .reasons__items(black)
 }
 
 .reason-first {
@@ -95,9 +111,33 @@
 }
 
 .advantages__title  {
-  .reasons__headers(black)
+  .reasons__headers(black);
+  text-align: left;
 }
 
 .advantages__description {
+  .reasons__items(black);
+  text-align: left;
+}
+
+.interesting {
+  background-color: white;
+}
+
+.interesting-item__header {
+  .reasons__headers(black)
+}
+
+.interesting-item {
   .reasons__items(black)
+}
+
+.map-google {
+  width: 320px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.map-google iframe  {
+  width: 320px;
 }
