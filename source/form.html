@@ -2,36 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </nav>
+  <header class="page-header">
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-bar">
       <a class="page-header__logo">
         <img
-          class="page-header__logo-image"
-          src="https://via.placeholder.com/150x150"
+          src="img/logo-sedona-mobile.svg"
+          width="50"
+          height="40"
           alt="Sedona"
         />
       </a>
-      <h1 class="main-logo">SEDONA</h1>
-    </header>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </div>
+  </header>
+  <div class="main-logos">
+    <p><img src="img/text-sedona-index.svg" alt="SEDONA"></p>
+  </div>
     <main>
       <form
         method="post"
@@ -49,10 +56,10 @@
         <div class="feedback-form__self-intro">
           <h2 class="self-intro__header">ПРЕДСТАВЬТЕСЬ:</h2>
           <label
-            >ИМЯ<sup>*</sup>:<input type="text" name="name" required
+          >ИМЯ<sup>*</sup>:<input type="text" name="name" required
           /></label>
           <label
-            >ФАМИЛИЯ<sup>*</sup>:<input type="text" name="surname" required
+          >ФАМИЛИЯ<sup>*</sup>:<input type="text" name="surname" required
           /></label>
           <label>ОТЧЕСТВО:<input type="text" name="middle-name"/></label>
         </div>
@@ -60,22 +67,22 @@
           <h2 class="contact-info__header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
           <label for="tel">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
           <span class="tel-input"
-            ><input
-              type="tel"
-              id="tel"
-              name="tel"
-              pattern="[0-9]{11}"
-              placeholder="Введите телефон"
-              required/><img src="https://via.placeholder.com/150x150"
+          ><input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{11}"
+            placeholder="Введите телефон"
+            required/><img src="https://via.placeholder.com/150x150"
           /></span>
           <label for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
           <span class="email-input"
-            ><input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Введите e-mail"
-              required/><img src="https://via.placeholder.com/150x150"
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите e-mail"
+            required/><img src="https://via.placeholder.com/150x150"
           /></span>
         </div>
         <div class="feedback-form__impression">
@@ -124,31 +131,29 @@
       </form>
     </main>
     <footer class="page-footer">
-      <h2 class="footer__title">#VISITSEDONA</h2>
+      <h3 class="footer__title">#VISITSEDONA</h3>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a
-              href="https://vk.com/htmlacademy"
-              class="social__link social__link--vk"
+            <a   href="https://twitter.com/htmlacademy"
+              class="social__link social__link--twitter"
               target="_blank"
-              >Мы Вконтакте
-            </a>
+            ><img src="img/icon-twitter.svg" alt="Мы в Твиттере"></a
+            >
           </li>
           <li class="social__item">
             <a
               href="https://www.facebook.com/htmlacademy"
               class="social__link social__link--fb"
               target="_blank"
-              >Мы в Фейсбуке
-            </a>
+            ><img src="img/icon-facebook.svg" alt="Мы в Фейсбуке"></a
           </li>
           <li class="social__item">
             <a
               href="https://www.youtube.com/user/htmlacademyru"
               class="social__link social__link--youtube"
               target="_blank"
-              >Мы на Ютубе
+            ><img src="img/icon-youtube.svg" alt="Мы на Ютубе">
             </a>
           </li>
         </ul>
@@ -159,8 +164,8 @@
           class="button copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           target="_blank"
-          ><img src="#" alt="HTML Academy" class="copyright__logo" />
-        </a>
+        ><img src="img/htmlacademy.svg" alt="HTML Academy" class="copyright__logo" width="30" height="30"
+        /></a>
       </div>
     </footer>
   </body>
