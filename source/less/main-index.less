@@ -1,0 +1,143 @@
+@light-blue: RGB(129, 179, 210);
+@main-font: 14px "PT Sans", sans-serif;
+
+
+.reasons-bg (@bg-color) {
+  background-color: @bg-color;
+}
+
+.reasons__headers (@font-color) {
+  color: @font-color;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reasons__items (@font-color) {
+  font: @main-font;
+  color: @font-color;
+  text-transform: uppercase;
+  line-height: 21px;
+  text-align: center;
+}
+
+//примеси закончились
+
+.main-logos {
+  background-image: url('../img/bg-back-mobile1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.main-logo {
+  background-image: url('../img/bg-back-mobile1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.main-header__intro {
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  .reasons__headers(black)
+}
+
+.main-header__intro {
+  .reasons__items(black)
+}
+
+.reason-first {
+  .reasons-bg(@light-blue);
+}
+
+.reason-first__title {
+  .reasons__headers(white)
+}
+
+.reason-first__item {
+  .reasons__items(white)
+}
+
+.reason-second {
+  .reasons-bg(@light-blue)
+}
+
+.reason-second-item__header {
+  .reasons__headers(white)
+}
+
+.reason-second-item {
+  .reasons__items(white);
+}
+
+.reason-third {
+  .reasons-bg(white)
+}
+
+.reason-third-item__header {
+  .reasons__headers(black)
+}
+
+.reason-third-item {
+  .reasons__items(black)
+}
+
+.reason-fourth {
+  .reasons-bg(white)
+}
+
+.reason-fourth-item__header {
+  .reasons__headers(black)
+}
+
+.reason-fourth-item {
+  .reasons__items(black)
+}
+
+.reason-fifth {
+  .reasons-bg(white)
+}
+
+.reason-fifth-item__header {
+  .reasons__headers(black)
+}
+
+.reason-fifth-item {
+  .reasons__items(black)
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__title  {
+  .reasons__headers(black);
+  text-align: left;
+}
+
+.advantages__description {
+  .reasons__items(black);
+  text-align: left;
+}
+
+.interesting {
+  background-color: white;
+}
+
+.interesting-item__header {
+  .reasons__headers(black)
+}
+
+.interesting-item {
+  .reasons__items(black)
+}
+
+.map-google {
+  width: 320px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.map-google iframe  {
+  width: 320px;
+}
